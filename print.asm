@@ -29,7 +29,7 @@ _print:
     movk    X9, #0x6C72, lsl#32 
     movk    X9, #0x2164, lsl#48 
 
-    stp     X8, X9, [SP, #-16]!
+    stp     X8, X9, [SP, #0]!
 
    ; mov     X10, #0x250A
     ;movk     X10, #0x0025, lsl#16
@@ -66,6 +66,7 @@ _exit:
     mov     X0, #0		;// Use 0 return code
 	mov     X16, #1		;// System call number 1 terminates this program
 	svc     #0xff
+ 
     br      X30
 .text
 mode:      .ascii  "w+"

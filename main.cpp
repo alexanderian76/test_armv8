@@ -23,9 +23,9 @@ int fd = 0;
     catch(...) {
         printf("asd");
     }
-   // print(str1, 6);
-   // print(str, sizeof(str));
-    int arr[] =  {1,0,0,1};
+    print(str1, 6);
+    print(str, sizeof(str));
+    int arr[] =  {0,0,0,0,0,1,1,1};
     printf("From bin: %d\n", binary_array_to_number(sizeof(arr) / sizeof(int), arr));
     //socket(str, sizeof(str)/sizeof(char)); 
     exit();
